@@ -1,0 +1,25 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="cloud.apiservicecartolaLetnis.controller.master" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Equipes">
+				<content>
+					<List items="{/times}">
+						<items>
+							<ObjectListItem icon="{time/url_escudo_png}" title="{time/nome}" type="Navigation" press="onDetailPress">
+								<attributes>
+									<!--<ObjectAttribute title="Patrimonio" text="{patrimonio}"/>-->
+									<!--<ObjectAttribute title="Pontuação Total" text="{pontos/campeonato}"/>-->
+									<ObjectAttribute title="Pontuação Rodada" text="{pontos}"/>
+									<ObjectAttribute title="Pontuação Campeonato" text="{pontos_campeonato}"/>
+									<ObjectAttribute title="Patrimonio" text="{patrimonio}"/>
+								</attributes>
+							</ObjectListItem>
+							<!--<StandardListItem title="{nome}" type="Navigation"/>-->
+						</items>
+					</List>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

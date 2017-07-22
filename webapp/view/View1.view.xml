@@ -1,0 +1,7 @@
+<mvc:View controllerName="cloud.apiservicecartolaLetnis.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<SplitApp id="root" mode="StretchCompressMode" afterMasterNavigate="onAfterMasterNavigate">
+		<masterPages></masterPages>
+		<detailPages></detailPages>
+	</SplitApp>
+</mvc:View>
