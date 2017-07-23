@@ -33,7 +33,7 @@ sap.ui.define([
 
 			setTimeout(function(){
 				pull.hide();
-			},10000)
+			},2000)
 		}		
 		
 		/**
