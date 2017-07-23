@@ -21,7 +21,20 @@ sap.ui.define([
 			this._oRouter.navTo('detalhes', {
 				time: sId
 			});			
-		}
+		},
+
+		handleRefresh : function(evt){
+			var pull = evt.getSource();	
+			var oComponent = this.getOwnerComponent();
+
+			var sUrl = "https://servicescartolafc.herokuapp.com/ligaLetnis";
+			var oModel = new JSONModel(sUrl);
+			oComponent.setModel(oModel); //this neste caso é o component					
+
+			setTimeout(function(){
+				pull.hide();
+			},10000)
+		}		
 		
 		/**
 		 * Called when a controller is instantiated and its View controls (if available) are already created.

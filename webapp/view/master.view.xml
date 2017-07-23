@@ -4,6 +4,7 @@
 		<pages>
 			<Page title="Equipes">
 				<content>
+					<PullToRefresh id="pullToRefresh" refresh="handleRefresh" />
 					<List items="{/times}">
 						<items>
 							<ObjectListItem icon="{time/url_escudo_png}" title="{time/nome}" type="Navigation" press="onDetailPress">
