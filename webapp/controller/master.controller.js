@@ -1,7 +1,8 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
-	"sap/ui/core/UIComponent"
-], function(Controller, UIComponent) {
+	"sap/ui/core/UIComponent",
+	"sap/ui/model/json/JSONModel"
+], function(Controller, UIComponent, JSONModel) {
 	"use strict";
 
 	return Controller.extend("cloud.apiservicecartolaLetnis.controller.master", {
