@@ -31,9 +31,14 @@ sap.ui.define([
 			var oModel = new JSONModel(sUrl);
 			oComponent.setModel(oModel); //this neste caso é o component					
 
+			var oRouter = UIComponent.getRouterFor(this.getView());
+			
+			//r2 é o nome da rota
+			oRouter.navTo('default');			
+
 			setTimeout(function(){
 				pull.hide();
-			},2000)
+			},2000)			
 		}		
 		
 		/**
